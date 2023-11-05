@@ -1,0 +1,49 @@
+$radius : 10px;
+$card_width: 340px;
+$card_height: 340px;
+#cardList{
+    a {
+        align-items: center;
+        color: #FFFFFF;
+        display: flex;
+        height: $card_height;
+        justify-content: center;
+        margin: 25px;
+        text-decoration: none;
+        transition: 0.5s;
+        width: $card_width;
+        .cardContent {
+            align-items: center;
+            border-radius: $radius;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            img {
+                border-radius: $radius;
+                filter: brightness(65%);
+                height:100%;
+                object-fit: cover;
+                width: 100%;
+            }
+            figcaption {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                max-width: 280px;
+                text-align: left;
+            }
+        }
+    }
+    a:hover {
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+}
