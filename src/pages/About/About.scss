@@ -1,0 +1,29 @@
+$radius: 5px;
+$deskWidth : 1023px;
+
+#aboutContent {
+    #aboutImg {
+        border-radius: $radius;
+        height: 223px;
+        margin: 63px auto 43px auto;
+        position: relative;
+        img {
+            position: absolute;
+            border-radius: $radius;
+            filter: brightness(65%);
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    #aboutText {
+        .collapseContainer {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto 30px auto;
+            width: $deskWidth;
+        }
+    }
+}
