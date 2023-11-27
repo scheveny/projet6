@@ -1,0 +1,46 @@
+.detailsContainer {
+    .basicInfos {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 30px 0 24px 0;
+        .leftBasicInfos {
+            .tagContainer {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .rightBasicInfos {
+            margin-right: 10px;
+            .hosterInfos {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .collapseGlobal {
+        display: flex;
+        gap: 6%;
+        .collapseContainer {
+            width: 582px;
+            margin-bottom: 20px;
+            .childrenShow {
+                height: 150px;
+            }
+        }
+    }
+}
+
+.detailsTitle {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.detailsLocation {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0;
+}

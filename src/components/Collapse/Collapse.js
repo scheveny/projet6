@@ -19,22 +19,34 @@ const Collapse = (props) => {
         }
     };
 
+    // 
+    let equipmentList ;
+    if (props.list) {
+        equipmentList = props.list.map((data, index) => (
+            <li key={index}>{data}</li>
+        ));
+    }
+
     // Rendering the component.
     return (
         <div className="collapseContainer">
             <button className="collapse-btn" onClick={toggleArrow}>
                 {props.label}
                 <div style={{ rotate }} ref={arrow} className="arrow">
-                    <div className="left-ash"></div>
-                    <div className="right-ash"></div>
+                    <div className="arrow-down"></div>
+                    <div className="arrow-up"></div>
                 </div>
             </button>
             {/* Content that is shown or hidden based on the 'open' state */}
             <div className={open ? "children-show" : "children-hidden"}>
-                <div className="children-content">{props.children}</div>
+                <div className="children-content">
+                    <p>{props.content}</p>
+                    <ul>{equipmentList}</ul>
+                </div>
             </div>
         </div>
     );
 };
+
 
 export default Collapse;

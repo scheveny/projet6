@@ -22,9 +22,9 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound/>} />
             <Route path="/About" element={<About />} />
-            <Route path="/Details" element={<Details />} />
+            <Route path="/Details/:id" element={<Details />} />
         </Routes>
         <Footer />
     </Router>
   </React.StrictMode>
-)
+);

@@ -1,0 +1,70 @@
+$salmon : #FF6060;
+$radius : 25px;
+$white : #FFFFFF;
+
+.carousel {
+    position: relative;
+    margin: 20px auto 30px auto;
+    .prev {
+        position: absolute;
+        left: 40px;
+        top: 212px;
+        .prevTop, .prevBottom {
+            background-color: $white;
+        height: 5px;
+        position: relative;
+        width: 40px;
+        }
+        .prevTop:hover, .prevBottom:hover {
+            cursor: pointer;
+        }
+        .prevTop {
+            transform: rotate(135deg);
+            bottom: 10px;
+        }
+        .prevBottom {
+            transform: rotate(-135deg);
+            top: 10px;
+        }
+    }
+    img {
+        border-radius: $radius;
+        height: 415px;
+        object-fit: cover;
+        width: 100%;
+    }
+    .positionIndicator {
+        bottom: 50px;
+        color: $white;
+        font-weight: 500;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        width: 50px;
+    }
+    .next {
+        position: absolute;
+        right: 40px;
+        top: 212px;
+        .nextTop, .nextBottom {
+            background-color: $white;
+            height: 5px;
+            position: relative;
+            width: 40px;
+        }
+        .nextTop:hover, .nextBottom:hover {
+            cursor: pointer;
+        }
+        .nextTop {
+            transform: rotate(45deg);
+            bottom: 10px;
+        }
+        .nextBottom {
+            transform: rotate(-45deg);
+            top: 10px;
+        }
+    }
+    .next:hover {
+        cursor: pointer;
+    }
+}
