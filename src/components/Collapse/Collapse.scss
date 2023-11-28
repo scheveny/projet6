@@ -70,6 +70,16 @@
     transition: height ease 1s;
     background-color: #F6F6F6;
     border-radius: 10px;
+    .children-content {
+        height: auto;
+        font-size: 18px;
+        padding: 15px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
 
 // Mediaquerys 
