@@ -12,3 +12,23 @@ $salmon: #FF6060;
     margin: 20px 10px 0 0;
     padding: 0 10px;
 }
+
+// Mediaquerys 
+@media screen and (max-width:767px) {
+    .detailsTag {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .detailsTag {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .detailsTag {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+}

@@ -68,3 +68,58 @@ $white : #FFFFFF;
         cursor: pointer;
     }
 }
+
+// Mediaquerys 
+@media screen and (max-width:991px) {
+    .carousel {
+        img {
+            height: 325px;
+        }
+        .prev, .next {
+            top: 162px;
+        }
+        .prev {
+            left: 20px;
+        }
+        .next {
+            right: 20px;
+        }
+        .positionIndicator {
+            bottom: 35px;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    .carousel {
+        img {
+            height: 290px;
+        }
+        .prev, .next {
+            top: 145px;
+        }
+        .prev {
+            left: 15px;
+        }
+        .next {
+            right: 15px;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .carousel {
+        img {
+            height: 255px;
+        }
+        .prev, .next {
+            top: 127px;
+        }
+        .prev {
+            left: 10px;
+            width: 20px;
+        }
+        .next {
+            right: 40px;
+            width: 20px;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.notation{
+.rating {
     .emptyStar, .filledStar {
         svg {
             font-size: 24px;
@@ -8,6 +8,37 @@
     .emptyStar {
         svg {
             color: #E3E3E3;
+        }
+    }
+}
+
+// Mediaquerys 
+@media screen and (max-width:767px) {
+    .rating {
+        .emptyStar, .filledStar {
+            svg {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .rating {
+        .emptyStar, .filledStar {
+            svg {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .rating {
+        .emptyStar, .filledStar {
+            svg {
+                font-size: 12px;
+            }
         }
     }
 }

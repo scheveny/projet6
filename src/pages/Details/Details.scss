@@ -44,3 +44,42 @@
     font-weight: 500;
     margin: 5px 0;
 }
+
+// Mediaquerys
+@media screen and (max-width:1200px) {
+    .detailsContainer {
+        .collapseGlobal {
+            .collapseContainer {
+                width: 450px;
+                .childrenShow {
+                    height: 175px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .detailsContainer {
+        .collapseGlobal {
+            .collapseContainer {
+                width: 500px;
+            }
+        }
+    }
+} 
+
+
+@media screen and (max-width:375px) {
+    .detailsContainer {
+        .collapseGlobal {
+            .collapseContainer {
+                width: 300px;
+                .childrenShow {
+                    height: 265px;
+                }
+            }
+        }
+    }
+}

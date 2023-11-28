@@ -14,3 +14,31 @@ header {
         text-decoration: underline;
     }
 }
+
+// Mediaquerys 
+// Tablet
+@media screen and (max-width: 767px) {
+    header {
+        img {
+            max-width: 145px;
+            max-height: 47px;
+        }
+        nav a {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Phone
+@media screen and (max-width: 480px) {
+    header {
+        align-items: center;
+        img {
+            max-width: 115px;
+        }
+        nav a {
+            font-size: 12px;
+        }
+    }
+}

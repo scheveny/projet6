@@ -47,7 +47,8 @@
 .children-show {
     width: 100%;
     overflow: hidden;
-    transition: height ease 1s;
+    height: 80%;
+    transition: height ease 0.75s;
     background-color: #F6F6F6;
     border-radius: 10px;
     .children-content {
@@ -69,4 +70,67 @@
     transition: height ease 1s;
     background-color: #F6F6F6;
     border-radius: 10px;
+}
+
+// Mediaquerys 
+@media screen and (max-width:1100px) {
+    .collapseBtn {
+        font-size: 20px;
+        .arrow {
+            .right-ash {
+                height: 14px;
+                left: 11px;
+            }
+            .left-ash {
+                height: 14px;
+                right: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .collapseBtn {
+        font-size: 16px;
+        height: 38px;
+        .arrow {
+            bottom: 8px;
+            right: 23px;
+            .right-ash {
+                height: 12px;
+                left: 10px;
+            }
+            .left-ash {
+                height: 12px;
+                right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .collapseBtn {
+        font-size: 13px;
+        height: 30px;
+        .arrow {
+            bottom: 3px;
+            right: 18px;
+            .right-ash {
+                height: 10px;
+                left: 9px;
+            }
+            .left-ash {
+                height: 10px;
+                right: 9px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .collapseBtn {
+        .arrow {
+            right: 15px;
+        }
+    }
 }

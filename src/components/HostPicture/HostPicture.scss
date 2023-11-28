@@ -5,3 +5,28 @@
         width: 64px;
     }
 }
+
+// Mediaquerys 
+@media screen and (max-width:767px) {
+    .hosterImg {
+        img {
+            width: 52px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .hosterImg {
+        img {
+            width: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .hosterImg {
+        img {
+            width: 32px;
+        }
+    }
+}

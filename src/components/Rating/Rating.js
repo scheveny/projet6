@@ -11,7 +11,7 @@ function Rating({ rating }) {
     const emptyStarIcon = <FontAwesomeIcon icon={faStar} />; // Utilise l'icône d'étoile vide
 
     return (
-        <div className="notation">
+        <div className="rating">
             {[...Array(filledStars)].map((_, index) => (
                 <span key={index} className="filledStar">
                     {filledStarIcon}

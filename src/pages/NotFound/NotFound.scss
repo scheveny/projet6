@@ -1,20 +1,59 @@
 $salmon : #FF6060;
 
 #notFoundContent {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    justify-content: space-evenly;
     h1 {
         font-size: 250px;
-        margin: 0 auto 25px auto;
     }
     p {
         font-size: 36px;
-        margin: 25px auto 75px auto;
     }
     a {
         color: $salmon;
         font-size: 18px;
-        margin: 75px auto 0 auto;
     }
+}
+
+// Mediaquerys
+// Responsive Tablet
+@media screen and (max-width:991px) {
+    #notFoundContent {
+        h1 {
+            font-size: 200px;
+        }
+        p {
+            font-size: 28px;
+        }
+    }
+    
+}
+
+// Responsive Large phone
+@media screen and (max-width:767px) {
+    #notFoundContent {
+        h1 {
+            font-size: 150px;
+        }
+        p {
+            font-size: 24px;
+        }
+    } 
+}
+
+// Responsive Thin phone
+@media screen and (max-width:375px) {
+    #notFoundContent {
+        h1 {
+            font-size: 96px;
+        }
+        p {
+            font-size: 18px;
+        }
+        a {
+            font-size: 14px;
+        }
+    } 
 }
