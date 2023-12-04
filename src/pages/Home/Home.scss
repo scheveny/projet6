@@ -39,7 +39,7 @@ $radius: 10px;
 }
 
 // Mediaquerys
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 789px) {
     #homeContent {
         #homeTitle {
             h1 {
@@ -49,18 +49,6 @@ $radius: 10px;
     }
 }
 
-@media screen and (max-width: 650px) {
-    #homeContent {
-        #homeTitle {
-            h1 {
-                text-align: left;
-                font-size: 24px;
-                left: 30%;
-                right: 30%;
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 375px) {
     #homeContent {

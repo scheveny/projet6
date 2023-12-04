@@ -11,9 +11,9 @@ $white : #FFFFFF;
         top: 212px;
         .prevTop, .prevBottom {
             background-color: $white;
-        height: 5px;
-        position: relative;
-        width: 40px;
+            height: 5px;
+            position: relative;
+            width: 40px;
         }
         .prevTop:hover, .prevBottom:hover {
             cursor: pointer;
@@ -70,7 +70,7 @@ $white : #FFFFFF;
 }
 
 // Mediaquerys 
-@media screen and (max-width:991px) {
+@media screen and (max-width:789px) {
     .carousel {
         img {
             height: 325px;
@@ -84,28 +84,23 @@ $white : #FFFFFF;
         .next {
             right: 20px;
         }
+        .prev .prevTop, .prev .prevBottom, .next .nextBottom, .next .nextTop {
+            width: 25px;
+            height: 4px;
+        }
+        .prev .prevBottom, .next .nextBottom {
+            top: 5px;
+        }
+        .prev .prevTop, .next .nextTop {
+            bottom: 5px;
+        }
         .positionIndicator {
             bottom: 35px;
         }
     }
 }
-@media screen and (max-width:650px) {
-    .carousel {
-        img {
-            height: 290px;
-        }
-        .prev, .next {
-            top: 145px;
-        }
-        .prev {
-            left: 15px;
-        }
-        .next {
-            right: 15px;
-        }
-    }
-}
-@media screen and (max-width:425px) {
+
+@media screen and (max-width:375px) {
     .carousel {
         img {
             height: 255px;
@@ -118,8 +113,18 @@ $white : #FFFFFF;
             width: 20px;
         }
         .next {
-            right: 40px;
+            right: 0;
             width: 20px;
+        }
+        .prev .prevTop, .prev .prevBottom, .next .nextBottom, .next .nextTop {
+            width: 10px;
+            height: 3px;
+        }
+        .prev .prevBottom, .next .nextBottom {
+            top: 0;
+        }
+        .prev .prevTop, .next .nextTop {
+            bottom: 2px;
         }
     }
 }

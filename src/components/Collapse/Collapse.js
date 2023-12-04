@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import arrowImg from "../../assets/collapse-arrow.png";
 import "./Collapse.scss";
 
 const Collapse = (props) => {
@@ -33,8 +34,7 @@ const Collapse = (props) => {
             <button className="collapse-btn" onClick={toggleArrow}>
                 {props.label}
                 <div style={{ rotate }} ref={arrow} className="arrow">
-                    <div className="arrow-down"></div>
-                    <div className="arrow-up"></div>
+                    <img src={arrowImg} alt="bouton flèche" />
                 </div>
             </button>
             {/* Content that is shown or hidden based on the 'open' state */}

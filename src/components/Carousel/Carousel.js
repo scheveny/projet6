@@ -31,7 +31,6 @@ function Carousel({ pictures }) {
             {/* Displaying the previous button only if there is more than one image in the carousel. */}
             {pictures.length > 1 && (
                 <div className="prev" onClick={PrevImg}>
-                    {/* Visual elements of the previous button */}
                     <div className="prevTop"></div>
                     <div className="prevBottom"></div>
                 </div>
@@ -50,7 +49,6 @@ function Carousel({ pictures }) {
             {/* Displaying the next button only if there is more than one image in the carousel. */}
             {pictures.length > 1 && (
                 <div className="next" onClick={NextImg}>
-                    {/* Visual elements of the next button */}
                     <div className="nextTop"></div>
                     <div className="nextBottom"></div>
                 </div>
