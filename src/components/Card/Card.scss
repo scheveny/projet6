@@ -56,3 +56,12 @@ $card_height: 340px;
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    #cardList {
+        margin: 5px 0 5px 0;
+        a {
+            margin: 5px 0 5px 0;
+        }
+    }
+}
