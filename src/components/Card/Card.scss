@@ -27,7 +27,7 @@ $card_height: 340px;
             img {
                 border-radius: $radius;
                 filter: brightness(65%);
-                height:100%;
+                height: 100%;
                 object-fit: cover;
                 width: 100%;
             }
@@ -48,7 +48,7 @@ $card_height: 340px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     #cardList {
         a {
         height: 255px;

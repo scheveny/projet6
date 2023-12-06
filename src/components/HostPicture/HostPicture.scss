@@ -15,15 +15,8 @@
     }
 }
 
-@media screen and (max-width:575px) {
-    .hosterImg {
-        img {
-            width: 40px;
-        }
-    }
-}
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:375px) {
     .hosterImg {
         img {
             width: 32px;

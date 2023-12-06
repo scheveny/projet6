@@ -4,19 +4,14 @@
 }
 
 // Mediaquerys 
-@media screen and (max-width:767px) {
+@media screen and (max-width:800px) {
     .hosterName {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width:575px) {
-    .hosterName {
-        font-size: 14px;
-    }
-}
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:375px) {
     .hosterName {
         font-size: 12px;
     }

@@ -19,21 +19,8 @@ $salmon : #FF6060;
 }
 
 // Mediaquerys
-// Responsive Tablet
-@media screen and (max-width:991px) {
-    #notFoundContent {
-        h1 {
-            font-size: 200px;
-        }
-        p {
-            font-size: 28px;
-        }
-    }
-    
-}
 
-// Responsive Large phone
-@media screen and (max-width:767px) {
+@media screen and (max-width:800px) {
     #notFoundContent {
         h1 {
             font-size: 150px;
@@ -44,7 +31,6 @@ $salmon : #FF6060;
     } 
 }
 
-// Responsive Thin phone
 @media screen and (max-width:375px) {
     #notFoundContent {
         h1 {

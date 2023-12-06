@@ -68,7 +68,7 @@
 
 //Responsive
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:800px) {
     .collapse-btn {
         font-size: 16px;
         height: 38px;
@@ -82,6 +82,9 @@
                 bottom: 3px;
             }
         }
+    }
+    .children-show .children-content {
+        font-size: 16px;
     }
 }
 

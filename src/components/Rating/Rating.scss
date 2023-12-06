@@ -13,7 +13,7 @@
 }
 
 // Mediaquerys 
-@media screen and (max-width:767px) {
+@media screen and (max-width:800px) {
     .rating {
         .emptyStar, .filledStar {
             svg {
@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width:500px) {
     .rating {
         .emptyStar, .filledStar {
             svg {
@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:375px) {
     .rating {
         .emptyStar, .filledStar {
             svg {
