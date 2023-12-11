@@ -1,12 +1,12 @@
 import React from "react";
 import "./HostPicture.scss";
 
-function HostName(props) {
+function HostPicture(props) {
     return (
         <div className="hosterImg">
-            <img src={props.src} alt="" />
+            <img src={props.src} alt="hôte" />
         </div>
     );
 }
 
-export default HostName;
+export default HostPicture;

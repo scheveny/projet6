@@ -20,7 +20,7 @@ const Collapse = (props) => {
         }
     };
 
-    // 
+    // This allows the Collapse component to dynamically display a list of equipment items when props.list is provided.
     let equipmentList ;
     if (props.list) {
         equipmentList = props.list.map((data, index) => (

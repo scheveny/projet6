@@ -1,5 +1,6 @@
 import React from "react";
 import "./HostName.scss";
+
 function HostName(props) {
     // Diviser le nom en prénom et nom
     const fullNameArray = props.hostName.split(" ");
