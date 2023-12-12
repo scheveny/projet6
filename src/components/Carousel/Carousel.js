@@ -41,10 +41,14 @@ function Carousel({ pictures }) {
                 alt={`Slide ${currentIndex + 1}`}
             />
 
-            {/* Displaying the position indicator in the carousel */}
-            <div className="positionIndicator">
-                {currentIndex + 1}/{pictures.length}
-            </div>
+            
+            {/* Displaying the position indicator only if there is more than one image in the carousel. */}
+            {pictures.length > 1 && (
+                <div className="positionIndicator">
+                    {currentIndex + 1}/{pictures.length}
+                </div>
+            )}
+
 
             {/* Displaying the next button only if there is more than one image in the carousel. */}
             {pictures.length > 1 && (
